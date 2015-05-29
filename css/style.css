@@ -223,6 +223,14 @@ nav {
   padding: 0 20px 20px 20px;
 }
 
+#content60 { 
+  text-align: left;
+  width: 520px;
+  margin: 0 0 0 200px;
+  float: center;
+  padding: 0 20px 20px 20px;
+}
+
 #contentPub { 
   text-align: left;
   width: 880px;
