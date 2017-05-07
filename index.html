@@ -1,68 +1,360 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-  <title>Christopher R. Aberger</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-</head>
-
-<body>
-  <div id="main">
-    <header>
-      <div id="logo">
-        <div id="logo_text">
-          <h1><a href="index.html">Christopher R. Aberger</span></a></h1>
-          <h2> caberger [at] stanford [dot] edu </h2>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Christopher R. Aberger</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Christopher R. Aberger" name="description">
+    <meta content="BdgPixel" name="author">
+    <!--Fav-->
+    <link href="images/code_icon.png" rel="shortcut icon">
+    
+    <!--styles-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    
+    <!--fonts google-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+       <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--PRELOADER-->
+    <div id="preloader">
+      <div id="status">
+        <img alt="logo" src="images/logo-big.png">
       </div>
-      <nav>
-        <ul class="sf-menu" id="nav">
-          <li class="selected"><a href="index.html">Home</a></li>
-          <li>|</li>
-          <li><a href="about.html">About Me</a></li>
-          <li>|</li>
-          <li><a href="publications.html">Papers</a></li>
-          <li>|</li>
-          <li><a href="pdf/Resume.pdf">Resumé</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="site_content1">
-      <div id="sidebar_container1">
-        <li><img width="350" height="450" src="images/prof.jpg" alt="photo_two" /></li>
-      </div>
-      <div id="content">
-        <p></p>
-        <p>I am a PhD candidate in the Computer Science Department at Stanford University where I study databases and computer architecture.  I have received masters degrees in Computer Science (September 2016) and Electrical Engineering (June 2015) from Stanford University as well as bachelors degrees in Computer Engineering and Computer Science from the University of Wisconsin-Madison (May 2013).</p>
-          <p> My research focuses on the intersection of cutting edge database theory and modern hardware trends---in particular high performance join processing. I conduct research under Professors <a href=http://cs.stanford.edu/people/chrismre/>Christopher Ré</a> and <a href="http://arsenalfc.stanford.edu/kunle/">Kunle Olukotun</a>. I am a member of <a href="http://i.stanford.edu/hazy/home">Hazy Research</a>, the <a href="http://infolab.stanford.edu/">InfoLab</a>, and the <a href="http://ppl.stanford.edu">Pervasive Parallelism Laboratory</a>.</p>
-
-<p><b>Research summary:</b> Did you know that the join operation, often the bottleneck operation in traditional databases, can run with a suboptimal asymptotic bound? We do! Using recent theoretical guarantees and modern hardware advances we have developed a new style of relational data processing engine that provides tight theoretical guarantees. We have applied our engine in the graph and RDF domains, but are quickly expanding out to other workloads. We demonstrate high performance when compared to traditional data processing engines and competitive performance when compared to specialized graph and RDF engines. My previous research has focused on designing a graph analytics DSL in an advanced compiler framework for parallel and heterogeneous architectures.</p>
-          
-<p>Relevant technical course work includes: databases, algorithms, computer architecture, operating systems, machine learning, programming languages, computer graphics, digital system design and synthesis, and logic design. </p>
-      </div>
-      
     </div>
-    <footer>
-      <!--<p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>-->
-      <p><a href="http://www.linkedin.com/pub/christopher-aberger/55/36b/43a"><img src="http://www.linkedin.com/img/icon/apple-touch-icon.png" width='20px'/></a>
-        <a href="https://github.com/HazyResearch/EmptyHeaded"><img src="images/github.png" width='20px'/></a></p>
-    </footer>
-  </div>
-  <p>&nbsp;</p>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-  <script type="text/javascript" src="js/image_fade.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-    });
-  </script>
-</body>
+    <!--/.PRELOADER END-->
+
+    <!--HEADER -->
+    <div class="header">
+      <div class="for-sticky">
+        <!--LOGO-->
+        <div class="logo">
+          <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"></a>
+        </div>
+        <!--/.LOGO END-->
+      </div>
+      <div class="menu-wrap">
+        <nav class="menu">
+          <div class="menu-list">
+            <a data-scroll="" href="#home" class="active">
+              <span>Home</span>
+            </a>
+            <a data-scroll="" href="#about">
+              <span>About</span>
+            </a>
+            <a data-scroll="" href="#publications">
+              <span>Publications</span>
+            </a>
+            <a data-scroll="" href="#connect">
+              <span>Connect</span>
+            </a>
+           <a href="Resume.pdf">
+              <span>Resume</span>
+            </a>
+          </div>
+        </nav>
+        <button class="close-button" id="close-button">Close Menu</button>
+      </div>
+      <button class="menu-button" id="open-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button><!--/.for-sticky-->
+    </div>
+    <!--/.HEADER END-->
+    
+    <!--CONTENT WRAP-->
+    <div class="content-wrap">
+      <!--CONTENT-->
+      <div class="content">
+        <!--HOME-->
+        <section id="home">
+          <div class="container">
+            <div class="row">
+              <div class="wrap-hero-content">
+                  <div class="hero-content">
+                    <h1>Hello</h1>
+                    <br>
+                    <span class="typed"></span>
+                  </div>
+              </div>
+              <div class="mouse-icon margin-20">
+                <div class="scroll"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/.HOME END-->
+
+        <!--ABOUT-->
+        <section id="about">
+          <div class="col-md-6 col-xs-12 no-pad">
+            <div class="bg-about"></div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 white-col">
+            <div class="row">
+              <!--OWL CAROUSEL2-->
+              <div class="owl-carousel2">
+                <div class="col-md-12">
+                  <div class="wrap-about">
+                    <div class="w-content">
+                      <p class="head-about">
+                       I am a PhD candidate in the Computer Science Department at Stanford University. I 
+                       conduct research under 
+                       <a href=https://cs.stanford.edu/people/chrismre> Christopher Ré</a>
+                        and 
+                       <a href=http://arsenalfc.stanford.edu/kunle> Kunle Olukotun</a>. 
+                       I am broadly interested in building the next generation of data 
+                       processing and data warehousing systems. In particular, 
+                       I enjoy designing principled
+                       <a href="https://www.usenix.org/system/files/1311_05-08_mickens.pdf">systems</a>: systems where a theoretical advancement
+                       is the foundation for the system.  
+                      </p>
+                      
+                      <h5 class="name">
+                        Christopher R. Aberger
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-md-12 col-sm-12 col-xs-12 white-col">
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+                      <div class="wrap-about">
+                        <table class="w-content">
+                          <tr>
+                            <td class="title">Name </td>
+                            <td class="break">:</td>
+                            <td> Christopher R. Aberger</td>
+                          </tr>
+                          <tr>
+                            <td class="title">Email </td>
+                            <td class="break">:</td>
+                            <td> caberger at stanford dot edu</td>
+                          </tr>
+                          <tr>
+                            <td class="title">Location </td>
+                            <td class="break">:</td>
+                            <td> Bay Area</td>
+                          </tr>
+                          <tr>
+                            <td class="title">GitHub ID </td>
+                            <td class="break">:</td>
+                            <td> <a href="https://github.com/craberger">craberger</a></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.OWL CAROUSEL2 END-->
+            </div>
+          </div>
+        </section>
+        <!--/.ABOUT END-->
+
+
+        <!--EDUCATION-->
+        <section class="grey-bg" id="publications">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="title-small">
+                  <span>Publications</span>
+                </h3>
+                <p>
+                <br>
+                <br>
+                <img alt="logo" src="images/eh_logo.png">
+                </p>
+              </div>
+              <div class="col-md-9 content-right">
+                <div class="row">
+                  <ul class="listing-item">
+
+                    <li>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="wrap-card">
+                          <div class="card">
+                            <h2 class="year">
+                              <a href="https://arxiv.org/abs/1503.02368">2016</a>
+                            </h2>
+                            <p class="job">
+                              <a href="https://arxiv.org/abs/1503.02368">EmptyHeaded: A Relational Engine for Graph Processing</a>
+                            </p>
+                            <p class="company">
+                              <a href="https://arxiv.org/abs/1503.02368">SIGMOD</a>
+                            </p>
+                            <p class="company">
+                              <a href="https://arxiv.org/abs/1503.02368">
+                              <font color="blue">Best Of Award</font>
+                              </a>
+                            </p>
+                            <hr>
+                            <div class="text-detail">
+                              <p>
+                              <a href="https://arxiv.org/abs/1503.02368">
+							Christopher R. Aberger, Susan Tu, <br>
+							Kunle Olukotun and Christopher Ré  
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="wrap-card">
+                          <div class="card">
+                            <h2 class="year">
+                              <a href="https://arxiv.org/abs/1602.03557">2016</a>
+                            </h2>
+                            <p class="job">
+                              <a href="https://arxiv.org/abs/1602.03557">Old Techniques for New Join Algorithms: A Case Study in RDF Processing</a>
+                            </p>
+                            <p class="company">
+                              <a href="https://arxiv.org/abs/1602.03557">ICDE Workshops</a>
+                            </p>
+                            <hr>
+                            <div class="text-detail">
+                              <p>
+                              <a href="https://arxiv.org/abs/1602.03557">
+							Christopher R. Aberger, Susan Tu, Kunle Olukotun and Christopher Ré  
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="listing-item">
+                    <li>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="wrap-card">
+                          <div class="card">
+                            <h2 class="year">
+                              <a href="https://ppl.stanford.edu/papers/cgo16-brown.pdf">2016</a>
+                            </h2>
+                            <p class="job">
+                              <a href="https://ppl.stanford.edu/papers/cgo16-brown.pdf">Have Abstraction and Eat Performance, Too: Optimized Heterogeneous Computing with Parallel Patterns</a>
+                            </p>
+                            <p class="company">
+                              <a href="https://ppl.stanford.edu/papers/cgo16-brown.pdf">CGO</a>
+                            </p>
+                            <hr>
+                            <div class="text-detail">
+                              <p>
+                              <a href="https://ppl.stanford.edu/papers/cgo16-brown.pdf">
+                                Kevin J. Brown, HyoukJoong Lee, Tiark Rompf, Arvind K. Sujeeth, Christopher De Sa, Christopher Aberger, and Kunle Olukotun 
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/.PUBLICATIONS END-->
+
+        <!--TESTIMONIAL-->
+        <section id="testimonial">
+          <div class="container">
+            <div class="row wrap-testimonial">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="owl-carousel">
+                  <div class="list-testimonial">
+                    <div class="content-testimonial">
+                      <h3 class="testi">
+                        “I'm personally convinced that computer science has a lot in common with physics. Both are about how the world works at a rather fundamental level. The difference, of course, is that while in physics you're supposed to figure out how the world is made up, in computer science you create the world. Within the confines of the computer, you're the creator. You get to ultimately control everything that happens. If you're good enough, you can be God. On a small scale.”
+                      </h3>
+                      <p class="people">
+                        Linus Torvalds
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-testimonial">
+                    <div class="content-testimonial">
+                      <h3 class="testi">
+                        “Nobody should start to undertake a large project. You start with a small trivial project, and you should never expect it to get large. If you do, you'll just overdesign and generally think it is more important than it likely is at that stage. Or worse, you might be scared away by the sheer size of the work you envision. So start small, and think about the details. Don't think about some big picture and fancy design. If it doesn't solve some fairly immediate need, it's almost certainly over-designed. And don't expect people to jump in and help you. That's not how these things work. You need to get something half-way useful first, and then others will say 'hey, that almost works for me', and they will get involved in the project”
+                      </h3>
+                      <p class="people">
+                        Linus Torvalds
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mask-testimonial"></div>
+        </section>
+        <!--/.TESTMONIAL END-->
+        
+        <!--FOOTER-->
+        <section id="connect">
+        <footer>
+          <div class="footer-top">
+            <ul class="socials">
+              <li class="gplus">
+                <a href="#" data-hover="caberger at stanford dot edu">Email</a>
+              </li>
+              <li class="facebook">
+                <a href="https://github.com/HazyResearch/EmptyHeaded" data-hover="Github">Github</a>
+              </li>
+              <li class="twitter">
+                <a href="https://www.linkedin.com/in/craberger" data-hover="LinkedIn">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+                <a href="https://dcrazed.com/"><img src="images/logo-bottom.png" alt="crafted with love" class="center-block" /></a>
+			 </div>
+            </div>
+          </div>
+        </footer>
+        <section>
+        <!--/.FOOTER-END-->
+
+      <!--/.CONTENT END-->
+      </div>
+    <!--/.CONTENT-WRAP END-->
+    </div>
+    
+
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.appear.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/classie.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/masonry.js" type="text/javascript"></script>
+    <script src="js/smooth-scroll.min.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
 </html>
