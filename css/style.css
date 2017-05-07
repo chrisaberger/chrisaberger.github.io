@@ -29,6 +29,11 @@ TABLE OF CONTENTS:
 
 ------------------------------------------------------------*/
 /*-----------------------------------------1) General--------------------------------------------------*/
+.portrait {
+    max-width: 180px;
+    max-height: 180px;
+}
+
 @font-face {
   font-family: 'Glyphter';
   src: url('../fonts/Glyphter.eot');
