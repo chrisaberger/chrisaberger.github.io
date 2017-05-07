@@ -91,7 +91,7 @@
     //typed js
     $(".typed").typed({
         strings: ["My name is Chris.", 
-        			"I'm a software engineer,", 
+        			"I'm a software engineer...", 
         			"building principled systems."],
         typeSpeed: 100,
         backDelay: 900,
